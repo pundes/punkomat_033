@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="img/preview_033.png" />
+    <title>PUNKOMAT:033</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="vehicle.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <style>
+      body {
+        font-family: 'Droid Sans', sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: #000;
+      }
+      canvas {
+        vertical-align: top;
+      }
+      .note {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        z-index: 1000;
+        background: rgba(0, 0, 0, .5);
+        padding: .8rem 1.5rem;
+        top: 30%;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 1rem;
+        color: #666;
+        text-align: center;
+      }
+      a {
+        color: #aaa;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="note">
+      <p>You will get the best user-experience in a dark surrounding</p>
+      <p><a href="#">» Close</a></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('a').click(function() {
+          $('.note').css( "display", "none" );
+        });
+      });
+    </script>
+  </body>
+</html>
